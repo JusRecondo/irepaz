@@ -1,0 +1,29 @@
+
+$breakpoint-mobile: 360px;
+$breakpoint-tablet: 640px;
+$breakpoint-desktop: 1024px;
+$breakpoint-wide: 1500px;
+
+$max-width: 900px;
+
+$main-font: "Montserrat", sans-serif;
+
+$color-claro-1:#ebebd3;
+$color-claro-2: #b59eb2;
+$color-claro-3: #a7b6ed;
+$color-oscuro-1: #230624; 
+$color-oscuro-2:#7b4a7d;
+$color-oscuro-3: #c71f42;
+ 
+
+$img-directory: "img/";
+
+
+@import "normalize";
+@import "fonts";
+@import "skeleton";
+@import "body-changes";
+@import "nav";
+@import "footer";
+@import "pages";
+@import "home";

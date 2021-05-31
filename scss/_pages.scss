@@ -1,0 +1,86 @@
+/**
+ * Styles for pages except Home.
+ */
+
+body {
+    &.bio,
+    &.musica,
+    &.contacto {
+        header{
+            max-width: $max-width;
+
+            img {
+                width: 900px;
+            }
+        }
+    }
+
+    &.bio {
+        main {
+            padding: 10px;
+        }
+
+    }
+
+    &.musica {
+        main {
+            position: relative;
+
+            iframe {
+                position: absolute;
+
+                &.spotify {
+                    position: absolute;
+                    margin: 8%;
+                }
+    
+                &.bandcamp {
+                    position: absolute;
+                    border: 0; 
+                    width: 75%; 
+                    height: 120px;
+                    margin-left: 8%;
+                    margin-top: 110%;
+
+
+                    &.desktop {
+                        display: none;
+
+                        @media (min-width: $breakpoint-tablet) {
+                            display: block;
+                        }
+
+                        @media (min-width: $breakpoint-desktop) {
+                            width: 100%;
+                        }
+                    }
+
+                    &.mobile {                        
+                        @media (min-width: $breakpoint-tablet) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    &.contacto {
+        main {
+            position: relative;
+
+            section#contacto {
+                position: absolute;
+                width: 100%;
+                background: #ebebd370;
+                top: 20%;
+                padding: 10px;
+
+                @media (min-width: $breakpoint-tablet) {
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}

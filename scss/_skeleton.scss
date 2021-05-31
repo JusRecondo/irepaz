@@ -1,0 +1,96 @@
+/**
+ * Generic styles.
+ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+body {
+    font-family: $main-font;
+    color: $color-oscuro-1;
+    background: $color-claro-1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 16px;
+    }
+
+    main,
+    section {
+        max-width: $max-width;
+    }
+
+    header {
+        position: relative;
+        max-width: 1200px;
+    }
+
+    a {
+        color: $color-oscuro-1;
+
+        &:hover,
+        &:active {
+            color: $color-oscuro-2;
+        }
+    }
+
+    img {
+        max-width: 100%;
+
+        &.img-mobile {
+            @media (min-width: $breakpoint-tablet) {
+                display: none;
+            }
+        }
+
+        &.img-desktop {
+            display: none;
+
+            @media (min-width: $breakpoint-tablet) {
+                display: block;
+            }
+        }
+    }
+
+    h2 {
+        text-align: center;
+        margin: 16px;
+    }
+
+    p {
+        text-align: justify;
+        margin: 10px 0;
+    }
+
+    iframe{
+        max-width: 100%;
+        
+        &.youtube-iframe {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+            min-height: 300px;
+            margin: 10px 0 0 0;
+    
+            @media (min-width: $breakpoint-tablet) {
+                min-height: 500px;
+            }
+        }
+
+    }
+
+}

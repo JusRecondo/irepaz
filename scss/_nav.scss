@@ -18,6 +18,11 @@ nav {
             @media (min-width: $breakpoint-tablet ) {
                 font-size: 18px;
             }
+
+            &.active a {
+                border-bottom: 1px solid $color-oscuro-1;
+                
+            }
         }
     }
 }

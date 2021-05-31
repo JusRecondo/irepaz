@@ -5,14 +5,5 @@ footer {
     @media (min-width: $breakpoint-tablet) {
         height: 70px;
     }
-    
-    #redes {
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
-        li {
-            margin: 16px;
-        }
-    }
 }

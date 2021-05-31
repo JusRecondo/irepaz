@@ -18,6 +18,29 @@ body {
     &.bio {
         main {
             padding: 10px;
+
+            a {
+                font-weight: 500;
+            }
+
+            section#entrevistas {
+                padding: 10px;
+                margin: 20px 0;
+
+                iframe {
+                    width: 100%;
+                    margin-top: 10px;
+
+                    &.podcast {
+                        height: 180px;
+                    }
+
+                    &.radiocut {
+                        height: 65px;
+                    }
+
+                }
+            }
         }
 
     }
@@ -73,12 +96,38 @@ body {
             section#contacto {
                 position: absolute;
                 width: 100%;
-                background: #ebebd370;
+                background: rgba(235, 235, 211, 0.541);
                 top: 20%;
                 padding: 10px;
 
                 @media (min-width: $breakpoint-tablet) {
                     padding: 20px;
+                }
+
+                p.mail {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    i.fa-envelope {
+                        margin-right: 5px;
+                    }
+                }
+
+                ul#redes {
+                    justify-content: space-evenly;
+
+                    @media (min-width: $breakpoint-desktop) {
+                        margin-top: 16px;
+                    }
+
+                    li {
+                        font-size: 16px;
+
+                        @media (min-width: $breakpoint-desktop) {
+                            font-size: 24px;
+                        }
+                    }
                 }
             }
         }

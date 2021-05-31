@@ -32,6 +32,12 @@ body {
             margin-top: 40px;
         }
 
+        p {
+            &:nth-of-type(1) {
+                text-align: center; 
+            }
+        }
+
         section {
 
             &#home-video {
@@ -41,6 +47,7 @@ body {
 
                 article {
                     padding: 10px;
+
                     @media (min-width: $breakpoint-tablet) {
                         padding: 0 10px;
                     }
@@ -52,6 +59,10 @@ body {
                 color: $color-oscuro-1;
                 padding: 10px;
                 margin: 10px 0;
+
+                a {
+                    font-weight: 500;
+                }
             }
 
             &#home-gallery {                

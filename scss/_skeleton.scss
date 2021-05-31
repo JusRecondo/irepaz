@@ -93,4 +93,14 @@ body {
 
     }
 
+    ul#redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            margin: 16px;
+        }
+    }
+
 }

@@ -20,7 +20,7 @@ body {
             padding: 10px;
 
             a {
-                font-weight: 500;
+                font-weight: 600;
             }
 
             section#entrevistas {
@@ -47,42 +47,39 @@ body {
 
     &.musica {
         main {
+            max-width: $max-width;
             position: relative;
+        }
+        section {
+
+            figure {
+                width: $max-width;
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
 
             iframe {
                 position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+            }
 
-                &.spotify {
-                    position: absolute;
-                    margin: 8%;
+            &#info-musica {
+                position: absolute;
+                width: 100%;
+                background: rgba(235, 235, 211, 0.8);
+                bottom: 20%;
+                padding: 10px;
+
+                @media (min-width: $breakpoint-tablet) {
+                    padding: 20px;
                 }
-    
-                &.bandcamp {
-                    position: absolute;
-                    border: 0; 
-                    width: 75%; 
-                    height: 120px;
-                    margin-left: 8%;
-                    margin-top: 110%;
 
-
-                    &.desktop {
-                        display: none;
-
-                        @media (min-width: $breakpoint-tablet) {
-                            display: block;
-                        }
-
-                        @media (min-width: $breakpoint-desktop) {
-                            width: 100%;
-                        }
-                    }
-
-                    &.mobile {                        
-                        @media (min-width: $breakpoint-tablet) {
-                            display: none;
-                        }
-                    }
+                a {
+                    font-weight: 600;
                 }
             }
 
@@ -96,7 +93,7 @@ body {
             section#contacto {
                 position: absolute;
                 width: 100%;
-                background: rgba(235, 235, 211, 0.541);
+                background: rgba(235, 235, 211, 0.8);
                 top: 20%;
                 padding: 10px;
 

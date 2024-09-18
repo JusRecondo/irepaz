@@ -50,20 +50,6 @@ body {
 
     img {
         max-width: 100%;
-
-        &.img-mobile {
-            @media (min-width: $breakpoint-tablet) {
-                display: none;
-            }
-        }
-
-        &.img-desktop {
-            display: none;
-
-            @media (min-width: $breakpoint-tablet) {
-                display: block;
-            }
-        }
     }
 
     h2 {

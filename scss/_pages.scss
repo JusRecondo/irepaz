@@ -11,6 +11,7 @@ body {
 
             img {
                 width: 900px;
+                max-width: 100%;
             }
         }
     }
@@ -53,7 +54,7 @@ body {
         section {
 
             figure {
-                width: $max-width;
+                max-width: 100%;
                 img {
                     width: 100%;
                     object-fit: cover;
@@ -71,10 +72,11 @@ body {
                 position: absolute;
                 width: 100%;
                 background: rgba(235, 235, 211, 0.8);
-                bottom: 20%;
+                bottom: 10%;
                 padding: 10px;
 
                 @media (min-width: $breakpoint-tablet) {
+                    bottom: 20%;
                     padding: 20px;
                 }
 
